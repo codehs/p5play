@@ -8703,6 +8703,7 @@ p5.prototype.registerMethod('init', function p5playInit() {
 					lh.endsWith('glitch.me') ||
 					lh.endsWith('replit.dev') ||
 					lh.endsWith('codehs.com') ||
+					lh.endsWith('codehs.me') ||
 					lh.endsWith('openprocessing.org') ||
 					location.origin.endsWith('preview.p5js.org')
 				) {
