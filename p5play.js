@@ -35,9 +35,6 @@ p5.prototype.registerMethod('init', function p5playInit() {
 			gtag('js', new Date());
 			gtag('config', 'G-EHXNCTSYLK');
 			gtag('event', 'p5play_v3_24');
-			if (location.hostname == 'codehs.com' || location.hostname == 'static1.codehs.com') {
-				gtag('event', 'codehs');
-			}
 		};
 	}
 
@@ -10699,21 +10696,6 @@ p5.prototype.registerMethod('post', function p5playPostDraw() {
 	const $ = this;
 	// called after each draw function call
 	$.p5play._inPostDraw = true;
-
-	if (window?.location?.hostname.endsWith('codehs.com')) {
-		$.background('yellow');
-		$.fill('black');
-		$.textSize(14);
-		$.textAlign($.LEFT, $.BASELINE);
-		$.text(
-			"CodeHS is currently prohibited from using p5play.\n\nCodeHS has failed to comply with p5play's AGPL license since January 11, 2024. CodeHS was notified on September 13, 2024 that their closed source, commercial use of p5play on codehs.com requires a proprietary license.\n\nSoftware theft is a violation of the Digital Millennium Copyright Act.\n\nContact CodeHS Support to voice your frustration with this disruption in service. Contact info@p5play.org for more information.",
-			12,
-			12,
-			300
-		);
-		$.noLoop();
-		return;
-	}
 
 	if ($.allSprites.autoCull) {
 		$.allSprites.cull(10000);
