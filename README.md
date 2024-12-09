@@ -1,3 +1,7 @@
+This is the CodeHS Fork of the p5play library. See info about the p5play library below.
+
+--
+
 # <img src="https://p5play.org/assets/p5play_logo.svg" width="64"> p5play ![](https://img.shields.io/github/package-json/v/quinton-ashley/p5play) ![](https://img.shields.io/github/license/quinton-ashley/p5play)
 
 ## Visit [p5play.org][]! 🎮🧑‍💻
